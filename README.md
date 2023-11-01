@@ -1,1 +1,1 @@
-# landing-page
+A template landing-page using HTML and CSS
