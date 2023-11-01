@@ -2,28 +2,18 @@ body {
     font-family: sans-serif;
     min-height: 100vh;
     margin: 0;
-
-}
-
-.top-body{
-    display: flex;
-    flex-direction: column;
+    padding: 0;
 }
 
 .header {
-    height: 72px;
+    font-family: "Hero";
+    height: 100px;
     background: #1F2937;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-.logo {
-    display: flex;
-    padding-left: 50px;   
-    color: #F9FAF8;
-    font-size: 24px;
-}
 .header-links {
     display: flex;
     margin-left: auto;
@@ -33,6 +23,14 @@ body {
     color: #E5E7Eb;
 }
 
+.logo {
+    display: flex;
+    padding-left: 50px;   
+    color: #F9FAF8;
+    font-size: 24px;
+}
+
+
 ul {
     list-style-type: none;
 }
@@ -40,13 +38,18 @@ ul {
 .title-container {
     background: #1F2937;
     display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.title-content {
     flex-direction: column;
     flex-wrap: wrap;
     padding-left: 50px;
     padding-bottom: 80px;
 }
 
-.header-title {
+.title {
     font-size: 48px;
     font-weight: 900;
     color: #F9FAF8;
@@ -71,10 +74,25 @@ ul {
     cursor: pointer;
 }
 
+.image-text {
+    font-family: "Roboto";
+    text-align: center;
+    font-size: 24px;
+}
+.title-image {
+    flex: 1;
+    background: grey;
+    margin-left: 50px;
+    min-height: 50px;
+    min-width: 150px;
+    max-height: 200px;
+    max-width: 500px;
+}
+
 .main-title{
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
+    margin: 40px;
     font-size: 36px;
     font-weight: 900;
     color: #1F2937;
@@ -83,22 +101,29 @@ ul {
 .main-section{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     flex: 1;
-    gap: 40px;
+    gap: 100px;
+    margin-bottom: 80px;
 }
 
 .info-image {
-    border: 5px solid;
-    border-color: blue;
-    border-radius: 10;
-    width: 250;
-    height: 250px;
+    border: 3px solid;
+    border-color: #3882F6;
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 15px;
 }
 .info {
     display: flex;
     flex-direction: column;
     flex: 1;
-    max-width: 200px;
+    max-width: 150px;
     text-align: center;
     align-items: center;
 }
@@ -117,28 +142,35 @@ ul {
     font-weight: lighter;
     font-style: italic;
     color: #1F2937;
-    display: flex;
     flex-wrap: wrap;
-    width: 825px;
+    max-width: 825px;
 }
 
 .quote-arthur{
     font-weight: bold;
     font-size: 28px;
     color: black;
-    display: flex;
-    padding-left: 500px;
+    text-align: end;
 }
 
-
-.action-container {
-    margin: 75px 150px;
+.action-section {
+    margin: 50px auto;
     padding: 40px 80px;
     background: #3882F6;
-    color: white;
+    border-radius: 10px;
     display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+}
+.action-container {
+    color: white;
+    max-width: 1000px;
 }
 
+.action-text {
+    display: flex;
+    flex-direction: column;
+}
 .action-title {
     font-size: 24px;
 }
